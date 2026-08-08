@@ -139,7 +139,6 @@
             </span>
             <small>sankha.design</small>
           </div>
-          <meta name="google-site-verification" content="panUpvGXHdaFTzhI4I6nyQSllHoEnBOYuojU-v2UZHc" />
 
           <div class="sankha-browser-body">
             <div class="sankha-browser-nav">
@@ -634,7 +633,7 @@
     </div>
   </footer>
 
-  <!-- SEO structured data – added for search engines -->
+  <!-- SEO structured data -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -758,7 +757,7 @@
   .sankha-loader-logo {
     width: 100px;
     height: 100px;
-    object-fit: contain;   /* ★ FIX: prevents stretching / distortion */
+    object-fit: contain;
     display: block;
     animation: sankhaLogoEnter 0.4s ease-out;
   }
@@ -851,7 +850,7 @@
   }
 
   .sankha-menu-button {
-    display: none; /* hidden on desktop, shown on mobile */
+    display: none;
     width: 42px;
     height: 42px;
     padding: 0;
@@ -912,7 +911,6 @@
     color: #281003 !important;
   }
 
-  /* On tablet/mobile – show hamburger, hide nav by default */
   @media screen and (max-width: 700px) {
     .sankha-menu-button {
       display: block;
@@ -946,7 +944,7 @@
   /* ---------- PAGE PADDING (offset for fixed header) ---------- */
   @media screen and (min-width: 701px) {
     #sankhaStudio {
-      padding-top: 130px; /* adjust if header height changes */
+      padding-top: 130px;
     }
   }
 
@@ -976,7 +974,7 @@
     visibility: hidden;
     transform: translateY(35px);
     transition: opacity 0.35s ease, visibility 0.35s ease, transform 0.35s ease;
-    cursor: pointer; /* whole area clickable */
+    cursor: pointer;
   }
 
   .sankha-popup.sankha-popup-visible {
@@ -1172,7 +1170,7 @@
     color: var(--green);
   }
 
-  /* ---------- HERO VISUAL (unchanged) ---------- */
+  /* ---------- HERO VISUAL ---------- */
   .sankha-hero-visual {
     position: relative;
     min-height: 490px;
@@ -1511,7 +1509,7 @@
     text-decoration: none;
   }
 
-  /* ---------- PROJECTS (unchanged) ---------- */
+  /* ---------- PROJECTS ---------- */
   .sankha-project-section { padding-top: 35px; }
   .sankha-project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
   .sankha-project-preview { position: relative; min-height: 350px; display: grid; place-items: center; overflow: hidden; padding: 33px; border: 1px solid var(--border); border-radius: 22px; text-decoration: none; transition: transform 0.22s ease; }
@@ -1544,7 +1542,7 @@
   .sankha-project-information p { margin: 3px 0 0; color: var(--muted); font-size: 0.77rem; }
   .sankha-project-information > a { display: grid; place-items: center; width: 41px; height: 41px; flex: 0 0 41px; border: 1px solid var(--border); border-radius: 50%; color: var(--gold); text-decoration: none; }
 
-  /* ---------- PROCESS (unchanged) ---------- */
+  /* ---------- PROCESS ---------- */
   .sankha-process { padding: 60px 0 105px; }
   .sankha-process-heading { max-width: 750px; margin: 0 auto 41px; text-align: center; }
   .sankha-process-heading .sankha-label { justify-content: center; }
@@ -1559,7 +1557,7 @@
   .sankha-process-grid h3 { margin: 0 0 7px; color: white; font-size: 1rem; }
   .sankha-process-grid p { margin: 0; color: var(--muted); font-size: 0.77rem; }
 
-  /* ---------- CONTACT (unchanged) ---------- */
+  /* ---------- CONTACT ---------- */
   .sankha-contact { display: grid; grid-template-columns: 0.88fr 1.12fr; align-items: center; gap: 62px; padding: 62px clamp(18px, 5vw, 56px); border: 1px solid rgba(244, 201, 93, 0.2); border-radius: 27px; background: radial-gradient(circle at 0 10%, rgba(255, 120, 0, 0.13), transparent 32%), radial-gradient(circle at 100% 100%, rgba(57, 169, 255, 0.09), transparent 28%), linear-gradient(145deg, #1c232e, #151a22); box-shadow: 0 27px 60px rgba(0, 0, 0, 0.24); }
   .sankha-contact-information > p:not(.sankha-label) { color: var(--muted); }
   .sankha-direct-email { display: flex; align-items: center; gap: 11px; margin: 26px 0; text-decoration: none; }
@@ -1574,7 +1572,7 @@
   .sankha-contact-benefits strong { color: white; font-size: 0.79rem; }
   .sankha-contact-benefits small { color: var(--muted); font-size: 0.69rem; }
 
-  /* ---------- FORM (unchanged) ---------- */
+  /* ---------- FORM ---------- */
   .sankha-form { padding: 26px; border: 1px solid var(--border); border-radius: 21px; background: var(--dark-two); box-shadow: 0 17px 42px rgba(0, 0, 0, 0.24); }
   .sankha-form-heading { margin-bottom: 20px; }
   .sankha-form-heading > small { color: var(--blue); font-size: 0.62rem; font-weight: 900; letter-spacing: 0.14em; }
@@ -1597,7 +1595,7 @@
   .sankha-form-message { min-height: 20px; margin: 9px 0 0; color: var(--gold); font-size: 0.72rem; text-align: center; }
   .sankha-form-privacy { margin: 2px 0 0; color: #798391; font-size: 0.63rem; text-align: center; }
 
-  /* ---------- ABOUT (unchanged) ---------- */
+  /* ---------- ABOUT ---------- */
   .sankha-about { display: grid; grid-template-columns: 275px 1fr; align-items: center; gap: 68px; padding: 115px 0; }
   .sankha-owner-art { position: relative; display: grid; place-items: center; }
   .sankha-owner-circle { width: 255px; height: 255px; display: grid; place-items: center; border: 1px solid rgba(244, 201, 93, 0.25); border-radius: 50%; background: radial-gradient(circle, rgba(255, 120, 0, 0.14), rgba(57, 169, 255, 0.04) 55%, transparent 56%); }
@@ -1609,14 +1607,14 @@
   .sankha-owner-skills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 21px; }
   .sankha-owner-skills span { padding: 7px 10px; border: 1px solid var(--border); border-radius: 99px; color: var(--gold); background: rgba(244, 201, 93, 0.035); font-size: 0.67rem; font-weight: 750; }
 
-  /* ---------- FINAL CTA (unchanged) ---------- */
+  /* ---------- FINAL CTA ---------- */
   .sankha-final-cta { display: flex; align-items: center; justify-content: space-between; gap: 38px; margin-bottom: 95px; padding: 43px clamp(21px, 5vw, 50px); border: 1px solid var(--border); border-radius: 24px; background: radial-gradient(circle at 100% 0, rgba(57, 169, 255, 0.16), transparent 34%), linear-gradient(135deg, #5e1930, #2d1c3e 55%, #172638); }
   .sankha-final-cta small { color: var(--gold); font-size: 0.64rem; font-weight: 900; letter-spacing: 0.13em; }
   .sankha-final-cta h2 { font-size: clamp(2rem, 4vw, 3.6rem); }
   .sankha-final-cta p { max-width: 680px; margin: 9px 0 0; color: #d3c8d0; }
   .sankha-final-cta > a { min-width: 188px; display: flex; align-items: center; justify-content: center; gap: 9px; padding: 13px 17px; border-radius: 11px; background: white; color: #17121a; font-weight: 900; text-decoration: none; }
 
-  /* ---------- FOOTER (unchanged) ---------- */
+  /* ---------- FOOTER ---------- */
   .sankha-footer { padding: 40px max(18px, calc((100% - 1160px) / 2)); border-top: 1px solid var(--border); background: #0a0e13; }
   .sankha-footer-top { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
   .sankha-footer-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
@@ -1725,6 +1723,17 @@
   (function () {
     "use strict";
 
+    /* ----- FAVICON ----- */
+    var oldIcons = document.querySelectorAll('link[rel="icon"], link[rel="shortcut icon"]');
+    for (var k = 0; k < oldIcons.length; k++) {
+      oldIcons[k].parentNode.removeChild(oldIcons[k]);
+    }
+    var favLink = document.createElement("link");
+    favLink.rel = "icon";
+    favLink.type = "image/png";
+    favLink.href = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu8AInEGfxr4matoFgMzWLMP5pbmYf5L_fQTI8Ki5mQoF1s33_2eIeAvsB4TkpKm6Xc9KkTz54ddDN3ZFK2Jnf2ccn3DzBvzgL3VuCU5vkgl6al396O-eQSbuhzl_jSOVh0UvnX7Xe-DaMk_P4FILNKeFSIdwcOGBExIGSqJ1Ro-x73QAVuHOq7ESCcDc/s784/1000081177.png";
+    document.head.appendChild(favLink);
+
     var root = document.getElementById("sankhaStudio");
     if (!root || root.getAttribute("data-ready") === "true") return;
     root.setAttribute("data-ready", "true");
@@ -1769,7 +1778,7 @@
       }
     }
 
-    /* ----- SMOOTH INTERNAL LINKS (all <a href="#...") ----- */
+    /* ----- SMOOTH INTERNAL LINKS ----- */
     var allLinks = root.getElementsByTagName("a");
     for (var i = 0; i < allLinks.length; i++) {
       (function (link) {
@@ -1810,10 +1819,8 @@
       }
     }
 
-    // Show after 12 seconds
     setTimeout(showPopup, 12000);
 
-    // Close button
     if (popupClose) {
       popupClose.addEventListener("click", function (e) {
         e.stopPropagation();
@@ -1821,7 +1828,6 @@
       });
     }
 
-    // Whole popup click → contact form
     if (popup) {
       popup.addEventListener("click", function (e) {
         if (popupClose && (e.target === popupClose || popupClose.contains(e.target))) {
