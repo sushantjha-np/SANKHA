@@ -5,8 +5,8 @@
       class="sankha-loader-logo"
       src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu8AInEGfxr4matoFgMzWLMP5pbmYf5L_fQTI8Ki5mQoF1s33_2eIeAvsB4TkpKm6Xc9KkTz54ddDN3ZFK2Jnf2ccn3DzBvzgL3VuCU5vkgl6al396O-eQSbuhzl_jSOVh0UvnX7Xe-DaMk_P4FILNKeFSIdwcOGBExIGSqJ1Ro-x73QAVuHOq7ESCcDc/s784/1000081177.png"
       alt="SANKHA logo"
-      width="100"
-      height="100"
+      width="140"
+      height="140"
     />
   </div>
 
@@ -755,8 +755,8 @@
   }
 
   .sankha-loader-logo {
-    width: 100px;
-    height: 100px;
+    width: min(140px, 30vw);
+    height: min(140px, 30vw);
     object-fit: contain;
     display: block;
     animation: sankhaLogoEnter 0.4s ease-out;
@@ -1723,7 +1723,15 @@
   (function () {
     "use strict";
 
-    /* ----- FAVICON ----- */
+    /* ----- SEO: Inject meta description if missing ----- */
+    if (!document.querySelector('meta[name="description"]')) {
+      var metaDesc = document.createElement('meta');
+      metaDesc.name = 'description';
+      metaDesc.content = 'SANKHA Web Design Studio creates modern, responsive websites for personal, business, blog, and portfolio needs. Professional web design by Sushant Jha.';
+      document.head.appendChild(metaDesc);
+    }
+
+    /* ----- FAVICON (new GitHub raw image) ----- */
     var oldIcons = document.querySelectorAll('link[rel="icon"], link[rel="shortcut icon"]');
     for (var k = 0; k < oldIcons.length; k++) {
       oldIcons[k].parentNode.removeChild(oldIcons[k]);
@@ -1731,7 +1739,7 @@
     var favLink = document.createElement("link");
     favLink.rel = "icon";
     favLink.type = "image/png";
-    favLink.href = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu8AInEGfxr4matoFgMzWLMP5pbmYf5L_fQTI8Ki5mQoF1s33_2eIeAvsB4TkpKm6Xc9KkTz54ddDN3ZFK2Jnf2ccn3DzBvzgL3VuCU5vkgl6al396O-eQSbuhzl_jSOVh0UvnX7Xe-DaMk_P4FILNKeFSIdwcOGBExIGSqJ1Ro-x73QAVuHOq7ESCcDc/s784/1000081177.png";
+    favLink.href = "https://raw.githubusercontent.com/sushantjha143/SANKHA/main/Sankha-Icon.png";
     document.head.appendChild(favLink);
 
     var root = document.getElementById("sankhaStudio");
