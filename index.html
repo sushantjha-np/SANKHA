@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <meta name="description" content="SANKHA Web Design Studio - Professional websites for individuals and businesses">
-  <title>SANKHA - Web Design Studio</title>
+  <meta name="description" content="SANKHA  - Professional websites for individuals and businesses">
+  <title>SANKHA - A Technology Company</title>
 </head>
 <body>
-<div id="sankhaStudio">
+<div id="sankha">
   <!-- LOADER ANIMATION -->
   <div id="sankhaLoader" aria-hidden="true" style="position: fixed; inset: 0; z-index: 9999999; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #0d1117 0%, #1a1f2e 100%); transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);">
     <div style="text-align: center;">
@@ -52,7 +52,7 @@
             />
             <span class="sankha-brand-name">
               <strong>SANKHA</strong>
-              <small>Web Design Studio</small>
+              <small>Web Design </small>
             </span>
           </a>
 
@@ -515,7 +515,7 @@
   }
 
   /* ---------- CORE VARIABLES ---------- */
-  #sankhaStudio {
+  #sankha {
     --dark: #0d1117;
     --dark-two: #121821;
     --panel: #1a222d;
@@ -549,13 +549,13 @@
     text-rendering: optimizeLegibility;
   }
 
-  #sankhaStudio *, #sankhaStudio *:before, #sankhaStudio *:after {
+  #sankha *, #sankha *:before, #sankha *:after {
     box-sizing: border-box;
   }
 
-  #sankhaStudio img { max-width: 100%; height: auto; }
-  #sankhaStudio a { color: inherit; transition: color 0.3s ease; }
-  #sankhaStudio button, #sankhaStudio input, #sankhaStudio select, #sankhaStudio textarea { font-family: inherit; }
+  #sankha img { max-width: 100%; height: auto; }
+  #sankha a { color: inherit; transition: color 0.3s ease; }
+  #sankha button, #sankha input, #sankha select, #sankha textarea { font-family: inherit; }
 
   /* ---------- BACKGROUND GLOW ---------- */
   .sankha-bg {
@@ -794,10 +794,10 @@
   }
 
   @media screen and (min-width: 769px) { 
-    #sankhaStudio { padding-top: 140px; } 
+    #sankha { padding-top: 140px; } 
   }
   @media screen and (max-width: 768px) { 
-    #sankhaStudio { padding-top: 90px; } 
+    #sankha { padding-top: 90px; } 
   }
 
   /* ---------- POPUP ---------- */
@@ -2448,7 +2448,7 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    #sankhaStudio *, #sankhaStudio *:before, #sankhaStudio *:after {
+    #sankha *, #sankha *:before, #sankha *:after {
       animation: none !important;
       scroll-behavior: auto !important;
       transition-duration: 0.01ms !important;
@@ -2465,7 +2465,7 @@
     if (!document.querySelector('meta[name="description"]')) {
       const metaDesc = document.createElement('meta');
       metaDesc.name = 'description';
-      metaDesc.content = 'SANKHA Web Design Studio creates modern, responsive websites for personal, business, blog, and portfolio needs. Professional web design by Sushant Jha.';
+      metaDesc.content = 'SANKHA Web Design  creates modern, responsive websites for personal, business, blog, and portfolio needs. Professional web design by Sushant Jha.';
       document.head.appendChild(metaDesc);
     }
     
@@ -2478,7 +2478,7 @@
     favLink.href = "https://raw.githubusercontent.com/sushantjha143/SANKHA/main/Sankha-Icon.png";
     document.head.appendChild(favLink);
 
-    const root = document.getElementById("sankhaStudio");
+    const root = document.getElementById("sankha");
     if (!root || root.getAttribute("data-ready") === "true") return;
     root.setAttribute("data-ready", "true");
 
