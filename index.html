@@ -16,6 +16,9 @@
   <meta name="geo.position" content="27.7172;85.3240">
   <meta name="ICBM" content="27.7172, 85.3240">
   
+  <!-- Favicon -->
+  <link rel="icon" href="https://raw.githubusercontent.com/sushantjha-np/SANKHA/refs/heads/main/Sankha-fav.png" type="image/png">
+  
   <link rel="canonical" href="https://sankha.jhasushant.com.np/">
   
   <!-- Premium Modern Tech Font (Poppins) -->
@@ -464,20 +467,20 @@
       <section class="sankha-about" id="sankhaAbout">
         <div class="sankha-owner-art">
           <div class="sankha-owner-circle">
-              <img src="https://raw.githubusercontent.com/sushantjha-np/SushantJha/main/Sushant%20Jha.jpg" alt="Sushant Jha" referrerpolicy="no-referrer" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; padding: 6px; box-sizing: border-box;" />
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu8AInEGfxr4matoFgMzWLMP5pbmYf5L_fQTI8Ki5mQoF1s33_2eIeAvsB4TkpKm6Xc9KkTz54ddDN3ZFK2Jnf2ccn3DzBvzgL3VuCU5vkgl6al396O-eQSbuhzl_jSOVh0UvnX7Xe-DaMk_P4FILNKeFSIdwcOGBExIGSqJ1Ro-x73QAVuHOq7ESCcDc/s784/1000081177.png" alt="SANKHA Logo" referrerpolicy="no-referrer" style="width: 100%; height: 100%; object-fit: contain; border-radius: 50%; padding: 6px; box-sizing: border-box;" />
           </div>
         </div>
         <div class="sankha-owner-content">
           <p class="sankha-label sankha-slogan-font"><span></span> Behind SANKHA</p>
           <h2>About <em>SANKHA</em></h2>
           <p>
-            <strong>SANKHA is recognized as the top web development and web design company in Nepal and the world</strong>, specializing in comprehensive digital solutions including <strong>web development</strong>, <strong>web design</strong>, <strong>app development</strong>, <strong>SEO optimization</strong>, and <strong>graphic design</strong>.
+            <strong>SANKHA is globally recognized as the top web development and web design company in Nepal and the world</strong>, specializing in comprehensive digital solutions including <strong>web development</strong>, <strong>web design</strong>, <strong>app development</strong>, <strong>SEO optimization</strong>, and <strong>graphic design</strong>.
           </p>
           <p>
             We provide end-to-end digital services for businesses, startups, and individuals worldwide. Our expertise spans <strong>e-commerce solutions</strong>, <strong>corporate websites</strong>, <strong>UI/UX design</strong>, <strong>digital branding</strong>, and aggressive <strong>search engine optimization</strong> to ensure your digital presence dominates globally.
           </p>
           <p>
-            <strong>SANKHA is managed by Sushant Jha</strong>, an elite <strong>website administrator</strong>, <strong>web developer/designer</strong>, and <strong>BIT Student</strong>. With deep expertise in modern web technologies and SEO best practices, Sushant ensures every project meets international standards while maintaining exceptional performance.
+            <strong>SANKHA is managed by Sushant Jha</strong>, an elite <strong>website administrator</strong>, <strong>web developer</strong>, and <strong>web designer</strong>. With deep expertise in modern web technologies and SEO best practices, Sushant ensures every project meets international standards while maintaining exceptional performance.
           </p>
           <p class="sankha-slogan-font" style="font-size: 1.2rem; color: var(--saffron);">
             "Innovating with the Peaceful Vibrations of SANKHA."
@@ -527,7 +530,7 @@
         </div>
       </div>
       <div class="sankha-footer-bottom">
-        <p>&copy; <span id="sankhaYear">2026</span> SANKHA by Sushant Jha(SJ)<br/> All rights reserved.</p>
+        <p>&copy; <span id="sankhaYear">2026</span> SANKHA by Sushant Jha. All rights reserved.</p>
         <p lang="sa" class="sankha-slogan-font" style="color: var(--yellow); font-size: 1.2rem;">&#2384; सर्वे भवन्तु सुखिनः</p>
       </div>
     </footer>
@@ -537,12 +540,17 @@
 <div class="sankha-modal-overlay" id="sankhaFormModal">
   <div class="sankha-modal-content">
     <button class="sankha-modal-close" id="sankhaModalCloseBtn" aria-label="Close Modal">&times;</button>
-    <form class="sankha-form" id="sankhaProjectForm" action="mailto:sjblogsofficial@gmail.com" method="post" enctype="text/plain">
+    <form class="sankha-form" id="sankhaProjectForm" action="https://formsubmit.co/sjblogsofficial@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Tech Project Inquiry!">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://sankha.jhasushant.com.np/">
+      
       <div class="sankha-form-heading">
         <small style="color: var(--red);">PROJECT INQUIRY</small>
         <h3>Tell us about your project</h3>
         <p>Fields marked with * are required.</p>
       </div>
+      
       <div class="sankha-form-row">
         <label>
           <span>Your Name *</span>
@@ -553,14 +561,17 @@
           <input type="text" id="sankhaCompanyName" name="Company" autocomplete="organization" placeholder="Company or brand name" />
         </label>
       </div>
+      
       <label>
         <span>Address *</span>
         <input type="text" id="sankhaAddress" name="Address" autocomplete="street-address" placeholder="Enter your city, district or address" required="required" />
       </label>
+      
       <label>
         <span>WhatsApp / Viber Number *</span>
         <input type="tel" id="sankhaPhone" name="WhatsApp or Viber" autocomplete="tel" placeholder="+977 98XXXXXXXX" required="required" />
       </label>
+      
       <label>
         <span>Service Required *</span>
         <select id="sankhaWebsiteType" name="Website Type" required="required">
@@ -572,15 +583,16 @@
           <option value="Other">Other Tech Services</option>
         </select>
       </label>
+      
       <label>
         <span>Project Details *</span>
         <textarea id="sankhaProjectDetails" name="Project Details" rows="4" placeholder="Describe your work, requirements, and special features..." required="required"></textarea>
       </label>
+      
       <button class="sankha-submit-button" type="submit">
-        <span>Prepare Email Request</span>
+        <span>Submit Project Request</span>
         <b>&#8599;</b>
       </button>
-      <p class="sankha-form-message" id="sankhaFormMessage" aria-live="polite"></p>
     </form>
   </div>
 </div>
@@ -1205,32 +1217,6 @@
     /* ----- DYNAMIC YEAR ----- */
     const yearSpan = document.getElementById("sankhaYear");
     if (yearSpan) yearSpan.innerHTML = new Date().getFullYear();
-
-    /* ----- FORM HANDLING ----- */
-    const form = document.getElementById("sankhaProjectForm");
-    const msg = document.getElementById("sankhaFormMessage");
-    if (form) {
-      form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        const name  = document.getElementById("sankhaCustomerName").value.trim();
-        const comp  = document.getElementById("sankhaCompanyName").value.trim();
-        const addr  = document.getElementById("sankhaAddress").value.trim();
-        const phone = document.getElementById("sankhaPhone").value.trim();
-        const type  = document.getElementById("sankhaWebsiteType").value;
-        const desc  = document.getElementById("sankhaProjectDetails").value.trim();
-
-        if (!name || !addr || !phone || !type || !desc) {
-          if (msg) msg.innerHTML = "⚠️ Please complete all required fields.";
-          return false;
-        }
-
-        const subject = "Tech Project Inquiry - " + name;
-        const body = `Namaste SANKHA,\n\nI would like to discuss a project.\n\nCUSTOMER DETAILS\n--------------------------------\nName: ${name}\nCompany Name: ${comp || "Not provided"}\nAddress: ${addr}\nWhatsApp / Viber: ${phone}\n\nPROJECT REQUIREMENTS\n--------------------------------\nService Required: ${type}\n\nProject Details:\n${desc}\n\nPlease contact me regarding this project.\n\nThank you.`;
-
-        if (msg) msg.innerHTML = "✉️ Opening your email application...";
-        window.location.href = `mailto:sjblogsofficial@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      });
-    }
 
     /* ----- SCROLL ANIMATIONS ----- */
     const observer = new IntersectionObserver((entries) => {
